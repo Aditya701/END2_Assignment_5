@@ -42,23 +42,24 @@ This article focus on summarizing data augmentation in NLP.
 You can go to this repository if you want to apply these techniques to your projects.
 
 
-# Hyperparameters - 
+# Hyperparameters
 - lr = 1e-4
 - batch_size = 16
-embedding_dim = 512
-dropout_keep_prob = 0.5
-seed = 42
-output_dim = 5
-hidden_dim1 = 256
-hidden_dim2 = 128
-n_layers = 2  # LSTM layers
-bidirectional = True 
+- embedding_dim = 512
+- dropout_keep_prob = 0.5
+- seed = 42
+- output_dim = 5
+- hidden_dim1 = 256
+- hidden_dim2 = 128
+- n_layers = 2  # LSTM layers
+- bidirectional = True 
 
-#Model Architect - Bidirectional LSTMs are an extension of traditional LSTMs that can improve model performance on sequence classification problems. In problems where all timesteps of the input sequence are available, Bidirectional LSTMs train two instead of one LSTMs on the input sequence.We have used model parameter bidirectional as True.
+# Model Architect
+Bidirectional LSTMs are an extension of traditional LSTMs that can improve model performance on sequence classification problems. In problems where all timesteps of the input sequence are available, Bidirectional LSTMs train two instead of one LSTMs on the input sequence.We have used model parameter bidirectional as True.
 
 model = LSTM(size_of_vocab, embedding_dim, hidden_dim1, hidden_dim2, output_dim, n_layers, bidirectional, dropout_keep_prob)
 
-#Training logs - 
+# Training logs
 
 Train Loss: 1.540 | Train Acc: 33.60%
 	 Val. Loss: 1.530 |  Val. Acc: 35.52% 
@@ -91,4 +92,5 @@ Train Loss: 1.540 | Train Acc: 33.60%
 	 Val. Loss: 1.520 |  Val. Acc: 37.41% 
 
 
-#Future improvements - We have plans to apply more augmentation strategies, robust hyperpaprameters tuning to imporve validation accuracy
+# Future improvements 
+We have plans to apply more augmentation strategies, robust hyperpaprameters tuning to imporve validation accuracy
