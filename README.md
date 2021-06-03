@@ -42,9 +42,9 @@ This article focus on summarizing data augmentation in NLP.
 You can go to this repository if you want to apply these techniques to your projects.
 
 
-#Hyperparameters - 
-lr = 1e-4
-batch_size = 16
+# Hyperparameters - 
+- lr = 1e-4
+- batch_size = 16
 embedding_dim = 512
 dropout_keep_prob = 0.5
 seed = 42
